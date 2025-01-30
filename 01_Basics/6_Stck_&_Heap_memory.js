@@ -5,7 +5,7 @@
 let myname = "suvakant";
 
 let father = "Baikuntha";
-father = "gopal row";
+father = "gopal";
 
 console.log(myname);
 console.log(father);
@@ -19,7 +19,9 @@ let userone = {
 
 let usertwo = userone;
 
-usertwo.email = "2201020424@cgu-odisha.ac.in";
+usertwo.email = "2201020424@cgu-odisha.ac.in";  
+// i was chaging the email in usertwo, 
+// As userone and usertwo are equal so userone email will so ChannelMergerNode.
 
 console.log(userone.email);
 console.log(usertwo.email);
