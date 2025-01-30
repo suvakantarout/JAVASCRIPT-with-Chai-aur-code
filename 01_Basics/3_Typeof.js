@@ -3,10 +3,12 @@ let number = 5;
 let name = "Sunit";
 let value = true;
 let value2 = "sunit123"
+let id = null;   //Object ==> IMPORTANT
 console.log(typeof (number));
 console.log(typeof(name))
 console.log(typeof(value));
 console.log(typeof(value2))
+console.log(typeof(id));
 
 
 
