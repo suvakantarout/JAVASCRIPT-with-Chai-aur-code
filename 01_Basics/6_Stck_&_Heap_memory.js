@@ -10,6 +10,8 @@ father = "gopal";
 console.log(myname);
 console.log(father);
 
+
+
 // Nonprimitive / Reference datatype
 
 let userone = {
