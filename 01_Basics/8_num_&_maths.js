@@ -13,9 +13,9 @@ console.log("*****************MATHS***************");
 // MATHS
 console.log(Math.abs(-5));
 console.log(Math.round(5.5));
-console.log(Math.floor(5.3));
+console.log(Math.floor(5.9));
 console.log(Math.max(5,56,989,1));
 console.log(Math.min(5,56,989,1));
 
 console.log(Math.random());
-console.log(Math.floor(Math.random() * 10 + 1));
+console.log(Math.floor(Math.random()*10)+ 1); //Due to floor() the random value will became 0 so (*10)+1
