@@ -19,12 +19,12 @@ console.log(name2.indexOf('t'));  //reture the index of a perticulsr chsrscter
 console.log(name2.substring(0, 8));  //printing substring from one index to another index
 console.log(name2.slice(0,4));  //split the required string
 
-const str3 = "     suv     ";
+let str3 = "     suv     ";
 console.log(str3);
 console.log(str3.trim()); // Trim the spaces from start as well as end of a string.
 
 
-const str4 = "My name is suv";
+let str4 = "My name is suv";
 console.log(str4.split(' '));  // Split a string through sapce
 
 
