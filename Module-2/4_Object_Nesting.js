@@ -31,18 +31,32 @@ console.log(objj)
 const users = [
     {
         id: 1,
-        name: suv
+        name: "suv"
     },
     {
         id: 2,
-        name: suvv
+        name: "suvv"
     },
     {
         id: 3,
-        name: suvvv
+        name: "suvvv"
     },
     {
         id: 4,
-        name: suvvvvv
+        name: "suvvvvv"
     }
 ]
+console.log(users[1].id)
+console.log(users[1].name)
+
+
+
+const Tinderuser = {
+    id: "121341",
+    name: "SUV",
+    isLoggedin: true
+}
+console.log(Tinderuser)
+
+console.log(Object.keys(Tinderuser))  // By this we can find all the keys of object
+console.log(Object.values(Tinderuser))
