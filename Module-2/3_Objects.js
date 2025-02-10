@@ -1,3 +1,4 @@
+
 const jsUser = {  //jsUser => Object Also called JSON
     // Keys
     name: "Suv",
