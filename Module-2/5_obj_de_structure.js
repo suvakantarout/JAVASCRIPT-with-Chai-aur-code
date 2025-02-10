@@ -7,7 +7,7 @@ const course = {
 }
 console.log(course.C_Instructor);
 
-// Another easy way
+// Destructuring way => destructure the object name
 const {C_Instructor: C_Ins} = course  //you can coustomise and use the keys any where in the  program 
 // without using any obj name and (.) operator
 console.log(C_Ins);
