@@ -11,7 +11,7 @@ const jsUser = {  //jsUser => Object Also called JSON
 }
 console.log(jsUser)
 
-console.log(jsUser.email);
+console.log(jsUser.email)
 console.log(jsUser.name)
 console.log(jsUser.location)
 console.log(jsUser.age)
