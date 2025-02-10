@@ -1,4 +1,4 @@
-const jsUser = {  //jsUser => Object
+const jsUser = {  //jsUser => Object Also called JSON
     // Keys
     name: "Suv",
     "Full name": "Suvakanta Rout",
