@@ -51,5 +51,7 @@ console.log(handelObject(user));
 let arr = [200,400,300,100];
 
 function returnSecondvalue(getArray){
-    
+    return getArray[1];
 }
+
+console.log("second value of array is: ",returnSecondvalue(arr))
