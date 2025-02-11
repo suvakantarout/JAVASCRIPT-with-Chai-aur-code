@@ -22,3 +22,11 @@ function sum(num1,num2){
 
 let ans = sum(10,10)
 console.log(ans);
+
+
+// Rest Operator
+function calculatecartprice(...num1){  // (...)Rest operator (add the numbers/contents into an array)
+    return num1
+}
+
+console.log(calculatecartprice(200,400,300,500))
