@@ -47,7 +47,6 @@ console.log(handelObject(user));
 
 
 // pass an array to an funcction argumrnt.
-
 let arr = [200,400,300,100];
 
 function returnSecondvalue(getArray){
