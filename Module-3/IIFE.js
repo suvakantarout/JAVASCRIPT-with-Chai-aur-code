@@ -10,6 +10,10 @@
 
 (function DBC(){
     console.log("DB CONNECTED");
-})()
+}) ();
 
 // console.log(DBC());
+
+( () => {
+    console.log("DB CONNECTED");
+}) ()
