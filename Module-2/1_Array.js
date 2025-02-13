@@ -26,7 +26,7 @@ let arr2 = ["suv","swagat"];
 
 
 
-// slice & splice
+// slice & splice  (Interview)
 
 console.log("A ",arr1);
 let myarray1 = arr1.slice(1,3);  // It will give elements of index 1 and 2. 
@@ -34,10 +34,10 @@ console.log(myarray1);
 console.log("\n");
 
 console.log("B ",arr1); 
-console.log("\n");
+console.log("\n");                
 
 console.log("C ",arr1);
-let myarray2 = arr1.splice(1,3);  //It will remove the elements having the indexs from 1 to 3.
+let myarray2 = arr1.splice(1,3);  //It will remove the elements having the indexs from 1 to 3 and keep them separately.
 console.log(myarray2);
 console.log("\n");
 
