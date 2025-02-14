@@ -20,7 +20,7 @@ console.log(this); // Interview
 // This keyword is not working here
 function chai(){
     let name = "Suv";
-    console.log(this.name);
+    console.log(this.name);  //Undefined
 }
 chai();
 
