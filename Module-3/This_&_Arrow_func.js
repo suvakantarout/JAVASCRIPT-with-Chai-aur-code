@@ -17,9 +17,22 @@ user.welcomeMessage();
 console.log(this); // Interview
 
  
-
+// This keyword is not working here
 function chai(){
-    console.log(this);
+    let name = "Suv";
+    console.log(this.name);
 }
-
 chai();
+
+
+// ARROW Function (=>)
+
+// const addTwo = (num1,num2) => {    (Explicit return -> when function defination is present inside {})
+//     return num1 + num2
+// }
+                    // OR
+// const addTwo = (num1,num2) => num1 + num2   (Implecit return)
+                    // OR 
+const addTwo = (num1,num2) => (num1 + num2)    // (Implecit return)
+
+console.log(addTwo(5,5));
