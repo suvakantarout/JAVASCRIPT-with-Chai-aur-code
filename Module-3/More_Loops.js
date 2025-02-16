@@ -51,9 +51,9 @@ console.log("\n");
 
 let language = ['GO','SWIFT','PYTHON','JS','RUBY'];
 
-language.forEach(function (val){
-    console.log(val);
-} )
+language.forEach((names) => {
+    console.log(names)
+})
 console.log("\n");
 
 
@@ -63,15 +63,15 @@ console.log("\n");
 let mylanguages = [
     {
         languagename: "C",
-        langfilename: ".c"
+        Extension: ".c"
     },
     {
         languagename: "C++",
-        langfilename: ".cpp"
+        Extension: ".cpp"
     },
     {
         languagename: "Javascript",
-        langfilename: ".js"
+        Extension: ".js"
     }
 ]
 
