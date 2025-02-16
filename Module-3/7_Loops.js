@@ -7,6 +7,7 @@
 // }
 
 
+// Nested Loop
 // for(let i = 0; i<=10; i++){
 //     console.log("Inner loop value",i);
 //     for(let j =0;j<=10; j++){
@@ -42,3 +43,20 @@ for(let i = 0; i<=10; i++){
     }
     console.log(i);
 }
+
+
+// while Loop
+let i = 0;
+while(i <= 5){
+    console.log("happy");
+    i++;
+}
+
+// do while loop
+
+let score = 0;
+do{
+    console.log(`Score is: ${score}`);
+    score++;
+}
+while(score <= 5)
