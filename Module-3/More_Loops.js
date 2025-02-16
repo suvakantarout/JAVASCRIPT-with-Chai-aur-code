@@ -17,7 +17,7 @@ for(const text of str){
 console.log("\n")
 
 
-// In map (key,value)
+// In map (key,value)  => Map is not iteratibles
 const map = new Map();
 map.set('IN', 'India')
 map.set('ENG', 'England')
@@ -30,9 +30,11 @@ for(const [key, value] of map){
 console.log("\n");
 
 
+
+
 // FOR IN LOOP
 
-let myobj = {
+let myobj = {   //Object cannot iterate through For Off Loop
     id: 124234,
     name: 'Suv',
     c_name: "Dellote"
@@ -41,3 +43,14 @@ let myobj = {
 for(const key in myobj){
     console.log(key, ':', myobj[key]);
 }
+console.log("\n");
+
+
+
+// FOR EACH LOOP
+
+let language = ['C','C++','JAVA','JS','RUBY'];
+
+language.forEach(function (val){
+    console.log(val);
+} )
