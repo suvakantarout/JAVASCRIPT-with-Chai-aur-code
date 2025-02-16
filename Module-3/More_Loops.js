@@ -49,8 +49,33 @@ console.log("\n");
 
 // FOR EACH LOOP
 
-let language = ['C','C++','JAVA','JS','RUBY'];
+let language = ['GO','SWIFT','PYTHON','JS','RUBY'];
 
 language.forEach(function (val){
     console.log(val);
 } )
+console.log("\n");
+
+
+
+// Accessing values inside object using For each loop
+
+let mylanguages = [
+    {
+        languagename: "C",
+        langfilename: ".c"
+    },
+    {
+        languagename: "C++",
+        langfilename: ".cpp"
+    },
+    {
+        languagename: "Javascript",
+        langfilename: ".js"
+    }
+]
+
+mylanguages.forEach((item) => {
+    console.log(item.languagename)
+})
+  
