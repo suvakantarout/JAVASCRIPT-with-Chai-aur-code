@@ -1,7 +1,7 @@
 
 const jsUser = {  //jsUser => Object Also called JSON
-    // Keys
-    name: "Suv",
+    // (Keys,values)
+    name: "Suv", //(Key, value)
     "Full name": "Suvakanta Rout",
     age: 18,
     location: "BBSR",
