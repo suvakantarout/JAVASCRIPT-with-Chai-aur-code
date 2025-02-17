@@ -47,7 +47,7 @@ console.log("\n");
 
 
 
-// FOR EACH LOOP
+// FOR EACH LOOP (for both array and object)
 
 let language = ['GO','SWIFT','PYTHON','JS','RUBY'];
 
