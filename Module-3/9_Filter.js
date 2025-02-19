@@ -9,6 +9,7 @@ const myNum = myNums.filter((num) => num > 4)
 console.log(myNum)
 
 
+
 // Using Foreach Loop
 const Newnum = [];
 myNums.forEach((num) => {
@@ -16,7 +17,4 @@ myNums.forEach((num) => {
         Newnum.push(num)
     }
 })
-
-// myNums.forEach((num) => if(num > 4){Newnum.push(num)})
-
 console.log(Newnum);
