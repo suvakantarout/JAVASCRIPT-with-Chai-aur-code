@@ -1,4 +1,4 @@
-// FOR OFF LOOP
+// FOR OF LOOP
 
 // In Array
 let arr = [1,2,3,4,5];
@@ -51,8 +51,9 @@ console.log("\n");
 
 let language = ['GO','SWIFT','PYTHON','JS','RUBY'];
 
-language.forEach((names) => {
-    console.log(names)
+language.forEach((names) => {        //(() => {}) is called the call back
+    console.log(names)   //The control will go to every ele present inside the language and we can
+    // access them through name (Here name is working like Iterator)
 })
 console.log("\n");
 
