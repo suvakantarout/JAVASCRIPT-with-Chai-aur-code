@@ -37,3 +37,11 @@ const shoppingCART = [
 
 const add = shoppingCART.reduce( (acc, item) => (acc + item.price),0 );
 console.log("Total cart ammount is:",add);
+
+
+// Add 1 in every price of the cart
+const t = [];
+shoppingCART.forEach( (item) => {
+    t.push(item.price + 1)
+})
+console.log(t);
