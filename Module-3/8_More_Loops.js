@@ -51,7 +51,7 @@ console.log("\n");
 
 let language = ['GO','SWIFT','PYTHON','JS','RUBY'];
 
-language.forEach((names) => {        //(() => {}) is called the call back
+language.forEach((names) => {        //(() => {}) is called the call back Function
     console.log(names)   //The control will go to every ele present inside the language and we can
     // access them through name (Here name is working like Iterator)
 })
