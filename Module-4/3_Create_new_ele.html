@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(43, 43, 43);
+        }
+        .day{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="Parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
 </body>
-</html>
+
+<script>
+    const p = document.querySelector('.parent');
+    console.log(p);
+    console.log(p.children);
+
+    for(let i = 0; i<p.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color = "Orange";
+</script>
+</html>   
