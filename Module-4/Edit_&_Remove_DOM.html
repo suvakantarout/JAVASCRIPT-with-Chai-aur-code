@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ol class="language">
+        <li>Javascript</li>
+    </ol>
+</body>
+
+<script>
+function addlanguage(langname){
+    const list = document.createElement('li');
+    list.innerHTML = langname;
+    document.querySelector('.language').
+    append(list);
+}
+addlanguage("Python");
+addlanguage("Typescript");
+
+// document.body.append(addlanguage);
+</script>
+
+</html>
