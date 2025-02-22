@@ -19,9 +19,19 @@ function addlanguage(langname){
     append(list);
 }
 addlanguage("Python");
-addlanguage("Typescript");
+addlanguage("Ruby");
 
 // document.body.append(addlanguage);
+
+// Edit / Replace element from a list using Dom manupulation
+const secondlang = document.querySelector("li:nth-child(2)")
+secondlang.innerHTML = "Java";
+
+const thirdlang = document.querySelector("li:nth-child(3)")
+thirdlang.innerHTML = "TypeScript";
+
+
+// Remove / Delete elemet from
 </script>
 
 </html>
