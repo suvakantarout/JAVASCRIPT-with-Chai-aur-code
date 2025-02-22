@@ -20,6 +20,8 @@ function addlanguage(langname){
 }
 addlanguage("Python");
 addlanguage("Ruby");
+addlanguage("Rust");
+addlanguage("Golang");
 
 // document.body.append(addlanguage);
 
@@ -32,6 +34,9 @@ thirdlang.innerHTML = "TypeScript";
 
 
 // Remove / Delete elemet from
+const lastlang = document.querySelector('li:last-child');
+lastlang.remove();
+
 </script>
 
 </html>
