@@ -15,8 +15,8 @@
 function addlanguage(langname){
     const list = document.createElement('li');
     list.innerHTML = langname;
-    document.querySelector('.language').
-    append(list);
+    const add = document.querySelector('.language')
+    add.append(list);
 }
 addlanguage("Python");
 addlanguage("Ruby");
