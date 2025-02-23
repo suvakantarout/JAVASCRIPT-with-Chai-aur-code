@@ -1,12 +1,10 @@
 body{
     background-color: white;
 }
-#h1{
+.text{
     font-family: 'Courier New', Courier, monospace;
 }
-#h2{
-    font-family: 'Courier New', Courier, monospace;
-}
+
 #B_div{
     display: flex;
     flex-direction: row;
