@@ -1,0 +1,48 @@
+body{
+    background-color: gray;
+}
+
+#BC{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.container{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 0px 10px 40px;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+buttom:hover{
+    background-color: gray;
+}
+
+#W_guide h3{
+    color: white;
+}
+#W_guide{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(224, 224, 18);
+}
+
+form p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    height: 23px;
+    width: 10%;
+    padding: 5px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 5px;
+    border: none;
+}
