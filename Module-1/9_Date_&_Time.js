@@ -4,10 +4,10 @@
 
 let mydate = new Date()  // Date => here 'Date' is a object and mydate is an instance of 'Date' object
 console.log(typeof mydate); //Object
-// console.log(mydate);
-// console.log(mydate.toString());
-// console.log(mydate.toLocaleString());
-// console.log(mydate.toDateString());
+console.log(mydate);
+console.log(mydate.toString());
+console.log(mydate.toLocaleString());
+console.log(mydate.toDateString());
 
 
 // let Todaysdate = new Date(2025, 1, 3);   //Date(year, month(srarts from 0), date)

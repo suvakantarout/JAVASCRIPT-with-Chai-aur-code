@@ -21,7 +21,7 @@ const obj3 = {g:7,h:8,i:9}
 const obj = Object.assign({},obj1,obj2,obj3)
 console.log(obj);
 
-// Object spread
+// Object spread  [IMP]
 const objj = {...obj1,...obj2}
 console.log(objj)
 
