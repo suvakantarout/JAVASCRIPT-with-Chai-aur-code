@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #img_div{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        img{
+            height: 90px;
+            width: 90px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="img_div">
+        <img id="cart" src="cart.png" alt="error">
+        <img class="C img" src="Cakes.png" alt="error">
+        <img class="I img" src="Ice_Creams.png" alt="error">
+    </div>
+</body>
+
+<script>
+// document.getElementById("cart").onclick = function(){
+//     alert("cart img clicked");
+// }
+
+// document.querySelectorAll(".img").forEach((I) => {
+//     I.onclick = function () {
+//         if (I.classList.contains("C")) {
+//             alert("cake img clicked");
+//         } else if (I.classList.contains("I")) {
+//             alert("icecream img clicked");
+//         }
+//     };
+// });
+
+
+// USING addEventListener
+
+document.getElementById("cart").addEventListener('click',function(){
+    alert("cart img clicked");
+})
+
+document.querySelectorAll(".img").forEach((I) => {
+    I.addEventListener("click", function () {
+        if (I.classList.contains("C")) {
+            alert("Cake image clicked");
+        } else if (I.classList.contains("I")) {
+            alert("Ice cream image clicked");
+        }
+    });
+});
+
+
+</script>
+
+</html>
+
+

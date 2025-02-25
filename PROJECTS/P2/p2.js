@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 form.addEventListener('submit',(S) =>{
+    
     S.preventDefault();  //Not goung to another page, instread stay in that page and calculate the ans.
+
     const height = parseInt(document.querySelector("#Height").value); 
     const weight = parseInt(document.querySelector("#Weight").value);   //value returns in string(parseInt is used to convert it into string)
     const Results = (document.querySelector("#results"));
