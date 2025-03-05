@@ -41,7 +41,7 @@ promiseThree.then(function(user){
 })
 
 
-// promise_4
+// promise_4 (Consume the promise through .then .catch and .finally)
 const promiseFour = new Promise((resolve, reject) => {
     setTimeout(() => {
         let error = true
@@ -66,10 +66,27 @@ promiseFour.then((user) =>{
 })
 
 
-// promise_5
-const promiseFive = new Promise((resolve, reject) => {
-    setTimeout(function(){
-        
-    },1000)
-})
 
+
+// promise_5 (Consume the promise through Async and await)
+const promiseFive = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let error = false
+        if(!error){
+            resolve({username: "javascript", password: "123"})
+        }
+        else{
+            reject('ERROR: js went wrong')
+        }
+    }, 2000)
+});
+
+async function consumePromiseFive(){
+    try{
+        const response = await promiseFive;
+        console.log(response);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
