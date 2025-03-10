@@ -8,7 +8,7 @@ const promiseOne = new Promise( (resolve, reject) => {
     }, 1000)  //Do the task once after 5sec .
 })
 
-promiseOne.then(function(){
+promiseOne.then(() => {
     console.log("Promise1 consumed");
 })
 
@@ -20,7 +20,7 @@ new Promise( function(resolve, reject){
         resolve();
     }, 1000)
 
-}).then(function(){
+}).then(() => {
     console.log("Promise2 consumed");
 })
 
@@ -36,7 +36,7 @@ const promiseThree =  new Promise( function(resolve, reject){
         })
     }, 2000)
 })
-promiseThree.then(function(user){
+promiseThree.then((user) => {
     console.log(user);
 })
 
