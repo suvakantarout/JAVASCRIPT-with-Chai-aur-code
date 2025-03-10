@@ -33,11 +33,18 @@ class user {
     }
 } 
 
-class Teacher extends User{
+class Teacher extends user{
     constructor(username,email,password){
         super(username);
         this.email = email;
         this.password = password;
 
     }
+
+    addcourse(){
+        console.log(`A new course was added by ${this.username}`);
+    }
 }
+
+const chai = new Teacher("chai","chai@gmail.com","123");
+chai.addcourse();
