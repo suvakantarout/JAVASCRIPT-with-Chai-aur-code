@@ -78,26 +78,24 @@ promiseFour.then((message) =>{
 
 
 
+// Promise.all()
 
-// promise_5 (Consume the promise through Async and await)
-const promiseFive = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let error = false
-        if(!error){
-            resolve({username: "javascript", password: "123"})
-        }
-        else{
-            reject('ERROR: js went wrong')
-        }
-    }, 2000)
-});
+let Promise1 = new Promise((resolve, reject) =>{
+    setTimeout(resolve, 1000, "FIRST");
+})
+let Promise2 = new Promise((resolve, reject) =>{
+    setTimeout(resolve, 2000, "SECOND");
+})
+let Promise3 = new Promise((resolve, reject) =>{
+    setTimeout(resolve, 3000, "THIRD");
+})
+let Promise4 = new Promise((resolve, reject) =>{
+    setTimeout(reject, 4000, "FOURTH");
+})
 
-async function consumePromiseFive(){
-    try{
-        const response = await promiseFive;
-        console.log(response);
-    }
-    catch(error){
-        console.log(error);
-    }
-}
+Promise.all([Promise1, Promise2 ,Promise3 ,Promise4])
+.then((value) => {
+    console.log(value);
+}).catch((error) => {
+    console.log("Error found: " + error);
+})
