@@ -1,4 +1,6 @@
 
+// PROMISE => Promise is used to handel the Async code and return a promise
+
 // How to write promise method - 1
 // promise_1
 const promiseOne = new Promise( (resolve, reject) => {
