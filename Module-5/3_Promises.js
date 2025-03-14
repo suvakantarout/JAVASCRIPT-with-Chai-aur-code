@@ -43,24 +43,35 @@ promiseThree.then((user) => {
 
 // promise_4 (Consume the promise through .then .catch and .finally)
 const promiseFour = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let error = true
-        if(!error){
-            resolve({username: "suv", password: "123"})
-        }
-        else{
-            reject('ERROR: Something went wrong')
-        }
-    }, 2000)
+   let success = true;
+   if(success){
+        resolve("Prmise fuldilled :)");
+   }
+   else{
+        reject("Promise rejected!!!!!!");
+   }
 })
 
-promiseFour.then((user) =>{
-    console.log(user);
-    return user.username
-}).then((username) => {
-    console.log(username);
+promiseFour.then((message) =>{
+    console.log("Then ka message is: " + message);
 }).catch((error) => {
-    console.log(error);
+    console.log("Error is: "+ error);
+}).finally(() => {
+    console.log("The promise is either resolved or rejected");
+})
+
+// Multiple then blocks / promise chaining
+/ promiseFour.then((message) =>{
+    console.log("first message: " + message);
+    return "Promise fulfiled 1st message";
+}).then( (message) =>{
+    console.log("second message: " + message);
+    return "Promise fulfiled 2nd message";
+}).then( (message) =>{
+    console.log("Third message: " + message);
+    return "Promise fulfiled 3rd message";
+}).catch((error) => {
+    console.log("Error is: "+ error);
 }).finally(() => {
     console.log("The promise is either resolved or rejected");
 })
