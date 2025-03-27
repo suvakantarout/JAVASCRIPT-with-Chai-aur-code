@@ -77,32 +77,26 @@ body{
     background: conic-gradient(rgb(249, 0, 0) var(--progress-degree, 10%),rgb(87, 4, 4) 0%);
 } 
 .grid-item{
-    /* background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 150px;
     height: 50px;
-    background-color: rgb(38, 178, 233);
-    color: white;
-    font-size: 20px;
-    /* font-weight: bold; */
+    background-color: rgb(255, 166, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     border-radius: 10px;
+    padding: 15px;
 }
 
 .data_card{
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(2, 100px); /* 2 Columns */
-    grid-template-rows: repeat(2, 100px); /* 2 Rows */
-    column-gap: 80px;
-    row-gap: 5px;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns inn the grid(each one fraction)*/
+    column-gap:15px;
+    row-gap: 30px;
     align-items: center;
     justify-content: center;
 }
-
 
 
