@@ -53,7 +53,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.circle{
+.outerCircle{
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -61,20 +61,34 @@ body{
     height: 100px;
     width: 100px;
     font-family: 1rem;
-    
 }
+.innerCircle{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;  /* keep Higher than width */
+    width: 85px;   /* keep Lower than height */
+    font-family: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+/* #emoji{
+    font-size: 30px;
+} */
+
 .easy-progress{
     /* border: 4px solid rgb(0, 183, 255); */
-    background: conic-gradient(rgb(0, 183, 255) var(--progress-degree, 86%),rgb(4, 65, 90) 0%);
+    background: conic-gradient(rgb(0, 183, 255) var(--progress-degree, 86%),rgb(4, 78, 108) 0%);
 }   
 .mid-progress{
     /* border: 4px solid rgb(249, 162, 0); */
-    background: conic-gradient(rgb(249, 162, 0) var(--progress-degree, 4%),rgb(81, 53, 2) 0%);
+    background: conic-gradient(rgb(249, 162, 0) var(--progress-degree, 60%),rgb(148, 96, 0) 0%);
 
 }
 .hard-progress{
     /* border: 4px solid rgb(255, 0, 0); */
-    background: conic-gradient(rgb(249, 0, 0) var(--progress-degree, 10%),rgb(87, 4, 4) 0%);
+    background: conic-gradient(rgb(249, 0, 0) var(--progress-degree, 70%),rgb(100, 0, 0) 0%);
 } 
 .grid-item{
     display: flex;
@@ -89,7 +103,7 @@ body{
     padding: 15px;
 }
 
-.data_card{
+.data_container{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 Columns inn the grid(each one fraction)*/
