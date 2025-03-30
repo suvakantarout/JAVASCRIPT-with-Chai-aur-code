@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 throw new Error("Unable to fetch the user details");
             }
 
-            const data = await response.json();  //Response data in json format
-            console.log("Logged data: ", data);  //Printing the json data
+            const responseData = await response.json();  //Response data in json format
+            console.log("Logged data: ", responseData);  //Printing the json data
 
         } catch (error) {
             userdatacontainer.innerHTML = `<p>No data found</p>`; // Corrected `innerHTML`
@@ -126,5 +126,38 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
+    // Calculating the data
+    function updateProgress(solved,total,label,circle){
+        const progressDegree = (solved/total) * 100;
+        easy-progress.style.setProperty("--progress-degree",`${progressDegree}%`);
+        mid-progress.style.setProperty("--progress-degree",`${progressDegree}%`);
+        hard-progress.style.setProperty("--progress-degree",`${progressDegree}%`);
+        label.textContent = `${solved}/${total}`;
+    }
+
+
+    // Displaying the Data in frontend
+    function displayUserData(responseData){
+        // Total Questions Available (creating the path where the data is present && hold them in variales)
+        const totalQues = responseData.data.allQuestionsCount[0].count;
+        const totalEasy = responseData.data.allQuestionsCount[1].count;
+        const totalMid = responseData.data.allQuestionsCount[2].count;
+        const totalHard = responseData.data.allQuestionsCount[3].count;
+
+        // Total Questions Solved (creating the path where the data is present && hold them in variales)
+        const totalSolved = responseData.data.matchedUser.submitStats.acSubmissionNum[0].count;
+        const totalEasySolved = responseData.data.matchedUser.submitStats.acSubmissionNum[1].count;
+        const totalMidSolved = responseData.data.matchedUser.submitStats.acSubmissionNum[2].count;
+        const totalHardSolved = responseData.data.matchedUser.submitStats.acSubmissionNum[3].count;
+
+        const solvedTotalQues = responseData.data.matchedUser.submitStats.acSubmissionNum[0].count;
+        const solvedTotalEasyQues = responseData.data.matchedUser.submitStats.acSubmissionNum[1].count;
+        const solvedTotalMidQues = responseData.data.matchedUser.submitStats.acSubmissionNum[2].count;
+        const solvedTotalHardQues = responseData.data.matchedUser.submitStats.acSubmissionNum[3].count;
+
+
+    }
+    
 })
 

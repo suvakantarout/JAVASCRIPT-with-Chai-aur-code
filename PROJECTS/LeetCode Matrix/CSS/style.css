@@ -60,18 +60,19 @@ body{
     justify-content: center;
     height: 100px;
     width: 100px;
-    font-family: 1rem;
 }
 .innerCircle{
+    font-family: "Roboto Slab", serif;
+    font-style:initial;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90px;  /* keep Higher than width */
     width: 85px;   /* keep Lower than height */
-    font-family: 1rem;
     background-color: rgb(255, 255, 255);
     color: black;
+    flex-direction: column;
 }
 /* #emoji{
     font-size: 30px;
