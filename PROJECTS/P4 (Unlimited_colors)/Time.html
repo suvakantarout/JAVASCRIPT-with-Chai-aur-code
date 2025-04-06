@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>SUVAKANT</h1>
+    <button id="stop">STOP</button>
+    <button id="start">START</button>
+</body>
+
+<script>
+    // SET-TIMEOUT
+    const changText = function () {
+        document.querySelector('h1').
+        innerHTML = "SUV"
+    }
+    setTimeout(changText, 2000);
+
+
+    // SET-TIMEOUT (Stopped while clicking the stop button)
+     const stopOut = setTimeout(() => {
+        console.log("Set time interval clicked");
+    },2000);
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(stopOut);
+        console.log("STOPPED");
+    })
+
+
+    // SET-TIMEINTERVAL (when click the start button interval will start, by clicking the stop button interval stopped)
+    document.querySelector('#start').addEventListener('click', function () {
+        const interval = setInterval(function(){
+            console.log("Suv", Date.now());
+        }, 1000);
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearInterval(interval)
+            console.log("STOPPED");
+        })
+
+    })
+
+   
+
+</script>
+
+</html>
